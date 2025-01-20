@@ -1,6 +1,284 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+"name": "2024 Plug And Play",
+"settings": [
+{
+"type": "range",
+"id": "padding_top",
+"min": 0,
+"max": 180,
+"step": 2,
+"unit": "px",
+"label": "Padding top",
+"default": 0
+}, {
+"type": "range",
+"id": "padding_bottom",
+"min": 0,
+"max": 180,
+"step": 2,
+"unit": "px",
+"label": "Padding bottom",
+"default": 0
+},
+{
+"type": "select",
+"id": "width",
+"label": "Section width",
+"default": "wrapper--none",
+"options": [
+{
+"value": "wrapper--none",
+"label": "Full width"
+}, {
+"value": "wrapper--full",
+"label": "Full width padded"
+}, {
+"value": "wrapper",
+"label": "Page width"
+}, {
+"value": "wrapper--narrow",
+"label": "Page width narrow"
+}
+]
+}
+],
+"presets": [
+{
+"name": "2024 Plug And Play",
+"category": "Text"
+}
+]
+}
 {% endschema %}
+
+<div class="Plug_and_Play">
+  <h2>Plug-and-Play</h2>
+  <p class="Plug_and_Play_text">To access a more comprehensive installation tutorial, please visit</p>
+  <a href="https://deepernetwork.in/pages/install-deeper-network" class="deeper_buy_now" target="_blank"
+    >install.deepernetwork ></a
+  >
+  <div class="Plug_and_Play_list">
+    <div class="Plug_and_Play_item">
+      <div class="Plug_and_Play_item_img">
+        <img
+          loading="lazy"
+          src="https://cdn.shopifycdn.net/s/files/1/0256/1038/7504/files/picoV5-01.gif?v=1702864562"
+          alt="Virtual Wire Mode"
+        >
+      </div>
+      <div class="Plug_and_Play_item_content">
+        <div class="Plug_and_Play_item_title">Virtual Wire Mode</div>
+
+        <div class="Plug_and_Play_item_text">
+          Suitable for homes with both a modem and router. Install Deeper Connect directly between them, maintaining
+          your existing Wi-Fi while enabling DPN services.
+        </div>
+        <a href="" class="mode_link"> learn more </a>
+      </div>
+    </div>
+    <div class="Plug_and_Play_item">
+      <div class="Plug_and_Play_item_img">
+        <img
+          loading="lazy"
+          src="https://cdn.shopifycdn.net/s/files/1/0256/1038/7504/files/picoV5-02_077be236-ec6d-47e9-aa15-63c8842e1574.gif?v=1702864561"
+          alt="Virtual Wire Mode"
+        >
+      </div>
+      <div class="Plug_and_Play_item_content">
+        <div class="Plug_and_Play_item_title">Router Mode</div>
+
+        <div class="Plug_and_Play_item_text">
+          Ideal for homes with integrated modem/routers.Deeper Connect serves as a second router for DpNservices,
+          requiring connection to DeeperWiFi.
+        </div>
+        <a href="" class="mode_link"> learn more </a>
+      </div>
+    </div>
+    <div class="Plug_and_Play_item">
+      <div class="Plug_and_Play_item_img">
+        <img
+          loading="lazy"
+          src="https://cdn.shopifycdn.net/s/files/1/0256/1038/7504/files/picoV5-03_0c7f9105-ef39-4ae3-8ede-5ef20aaf265d.gif?v=1702864560"
+          alt="Virtual Wire Mode"
+        >
+      </div>
+      <div class="Plug_and_Play_item_content">
+        <div class="Plug_and_Play_item_title">Wifi Adapter Mode</div>
+
+        <div class="Plug_and_Play_item_text">
+          Great for home Wi-Fi or public hotspots, such as hotels, cafes, and airports. Deeper Connect acts as a USB
+          Wi-Fi adapter, letting you connect to home Wi-Fi or the public Wi-Fi without DeeperWiFi.
+        </div>
+        <a href="" class="mode_link"> learn more </a>
+      </div>
+    </div>
+    <div class="Plug_and_Play_item">
+      <div class="Plug_and_Play_item_img">
+        <img
+          loading="lazy"
+          src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/picoV5-03_-1225-2.gif?v=1721025541"
+          alt="Virtual Wire Mode"
+        >
+      </div>
+      <div class="Plug_and_Play_item_content">
+        <div class="Plug_and_Play_item_title">Wireless Relay Mode</div>
+
+        <div class="Plug_and_Play_item_text">
+          Perfect for home Wi-Fi or public hotspots like hotels, cafes, and airports. Deeper Connect connects to home
+          Wi-Fi or the public Wi-Fi, and users need to connect to DeeperWiFi to use DPN services.
+        </div>
+        <a href="" class="mode_link"> learn more </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .deeper_buy_now {
+    display: flex;
+    gap: 30px;
+    color: #495af5;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.12px;
+    display: block;
+    font-family: "SF Pro Text";
+    text-decoration: none;
+  }
+
+  .Plug_and_Play {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 36px 0;
+  }
+
+  .Plug_and_Play h2 {
+    color: #111928;
+    text-align: center;
+    font-family: "SF Pro Text";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 120% */
+    letter-spacing: -0.12px;
+    margin: 0 0 16px 0;
+  }
+
+  .Plug_and_Play_text {
+    color: #6c6c78;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 130% */
+    letter-spacing: -0.12px;
+    margin-bottom: 30px;
+  }
+
+  .Plug_and_Play_list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  .Plug_and_Play_item {
+    min-width: 325px;
+    max-width: 325px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 0.5px solid #dfe4ea;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .Plug_and_Play_item_img {
+    width: 100%;
+  }
+
+  .Plug_and_Play_item_img img {
+    width: 100%;
+  }
+
+  .Plug_and_Play_item_content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .Plug_and_Play_item_title {
+    color: #111928;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: "SF Pro Text";
+    line-height: 26px;
+    /* 130% */
+    letter-spacing: -0.12px;
+    margin-bottom: 10px;
+  }
+
+  .Plug_and_Play_item_text {
+    color: #637381;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: -0.12px;
+    font-family: "SF Pro Text";
+  }
+
+  .mode_link {
+    display: inline-flex;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    border-radius: 32px;
+    border: 0.5px solid #dfe4ea;
+    color: #637381;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: -0.12px;
+    display: none;
+  }
+
+  @media screen and (max-width: 1440px) {
+    .Plug_and_Play h2 {
+      font-size: 32px;
+    }
+
+    .Plug_and_Play_text {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .Plug_and_Play_item_title {
+      font-size: 18px;
+    }
+
+    .Plug_and_Play {
+      padding: 30px 0;
+    }
+
+    .Plug_and_Play_list {
+      margin-top: 20px;
+      padding: 0 10px;
+      overflow-x: auto;
+      padding-bottom: 20px;
+    }
+  }
+</style>
