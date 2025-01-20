@@ -99,10 +99,80 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "featured_product_rnQ4eP": {
+      "type": "featured-product",
+      "blocks": {
+        "text_A33azi": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_f3aKEg": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_zTchWg": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_ARgQVJ": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_XhCG7n": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_hYBC68": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_tcMQaf": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_A33azi",
+        "title_f3aKEg",
+        "price_zTchWg",
+        "variant_picker_ARgQVJ",
+        "quantity_selector_XhCG7n",
+        "buy_buttons_hYBC68",
+        "share_tcMQaf"
+      ],
+      "settings": {
+        "product": "deeper-connect-pico-lite",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "featured_product_rnQ4eP"
   ]
 }
