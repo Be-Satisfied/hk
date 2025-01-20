@@ -75,10 +75,19 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "plug_and_play_cfJWMU": {
+      "type": "plug-and-play",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width": "wrapper--none"
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "plug_and_play_cfJWMU"
   ]
 }
