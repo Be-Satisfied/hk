@@ -36,7 +36,6 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/banner1-pc.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
