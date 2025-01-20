@@ -372,6 +372,46 @@
       "min_error": "This item has a minimum of {{ min }}",
       "max_error": "This item has a maximum of {{ max }}",
       "step_error": "You can only add this item in increments of {{ step }}"
+    },
+    "plug_and_play": {
+      "title": "Plug-and-Play",
+      "description": "To access a more comprehensive installation tutorial, please visit",
+      "install_link": "/pages/install-deeper-network",
+      "install_text": "install.deepernetwork >",
+      "learn_more": "learn more",
+      "virtual_wire_mode": {
+        "title": "Virtual Wire Mode",
+        "description": "Suitable for homes with both a modem and router. Install Deeper Connect directly between them, maintaining your existing Wi-Fi while enabling DPN services.",
+        "alt": "Virtual Wire Mode"
+      },
+      "router_mode": {
+        "title": "Router Mode",
+        "description": "Ideal for homes with integrated modem/routers.Deeper Connect serves as a second router for DpNservices, requiring connection to DeeperWiFi.",
+        "alt": "Router Mode"
+      },
+      "wifi_adapter_mode":{
+        "title": "Wi-Fi Adapter Mode",
+        "description": "Great for home Wi-Fi or public hotspots, such as hotels, cafes, and airports. Deeper Connect acts as a USB Wi-Fi adapter, letting you connect to home Wi-Fi or the public Wi-Fi without DeeperWiFi.",
+        "alt": "Wi-Fi Adapter Mode"
+      },
+      "wireless_relay_mode": {
+        "title": "Wireless Relay Mode",
+        "description": "Perfect for home Wi-Fi or public hotspots like hotels, cafes, and airports. Deeper Connect connects to home Wi-Fi or the public Wi-Fi, and users need to connect to DeeperWiFi to use DPN services.",
+        "alt": "Wireless Relay Mode"
+      }
+    },
+    "deeper_connect": {
+      "features": {
+        "minimal_config": "Minimal Configuration",
+        "unlimited_devices": "Unlimited devices", 
+        "support": "24/7 support",
+        "equipment": "Adaptation equipment"
+      },
+      "descriptions": {
+        "setup": "Setup is simple and intuitive, requiring minimal configuration. After connecting the built in Wi-Fi adapter or a set of included of ethernet cables, you are ready to go.",
+        "devices": "A single purchase protects multiple devices in your household without the need for multiple accounts, ensuring a hassle-free experience.",
+        "support": "If you need assistance, our customer support experts are available 24/7. Please contact us via Call or Email."
+      }
     }
   },
   "localization": {

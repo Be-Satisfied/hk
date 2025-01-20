@@ -371,6 +371,46 @@
       "min_error": "此品項下限為 {{ min }}",
       "max_error": "此品項上限為 {{ max }}",
       "step_error": "只能以 {{ step }} 為增量新增此品項"
+    },
+    "plug_and_play": {
+      "title": "即插即用",
+      "description": "如需查看更詳細的安裝教程，請訪問",
+      "install_link": "/pages/install-deeper-network", 
+      "install_text": "install.deepernetwork >",
+      "learn_more": "了解更多",
+      "virtual_wire_mode": {
+        "title": "虛擬網線模式",
+        "description": "適用於同時擁有調製解調器和路由器的家庭。將 Deeper Connect 直接安裝在兩者之間，在啟用 DPN 服務的同時保持現有的 Wi-Fi。",
+        "alt": "虛擬網線模式"
+      },
+      "router_mode": {
+        "title": "路由器模式",
+        "description": "適用於使用整合式數據機/路由器的家庭。Deeper Connect 作為第二個路由器提供 DPN 服務，需要連接到 DeeperWiFi。",
+        "alt": "路由器模式"
+      },
+      "wifi_adapter_mode":{
+        "title": "Wi-Fi 適配器模式",
+        "description": "適用於家庭 Wi-Fi 或公共熱點，如酒店、咖啡廳和機場。Deeper Connect 作為 USB Wi-Fi 適配器，讓您無需 DeeperWiFi 即可連接到家庭 Wi-Fi 或公共 Wi-Fi。",
+        "alt": "Wi-Fi 適配器模式"
+      },
+      "wireless_relay_mode": {
+        "title": "無線中繼模式",
+        "description": "非常適合家庭 Wi-Fi 或公共熱點，如酒店、咖啡廳和機場。Deeper Connect 連接到家庭 Wi-Fi 或公共 Wi-Fi，用戶需要連接到 DeeperWiFi 才能使用 DPN 服務。",
+        "alt": "無線中繼模式"
+      }
+    },
+    "deeper_connect": {
+      "features": {
+        "minimal_config": "最簡配置",
+        "unlimited_devices": "無限設備", 
+        "support": "24/7 支援",
+        "equipment": "適配設備"
+      },
+      "descriptions": {
+        "setup": "設置簡單直觀，只需最少的配置。連接內置 Wi-Fi 適配器或隨附的乙太網線後，即可開始使用。",
+        "devices": "一次購買即可保護您家中的多個設備，無需多個帳戶，確保無憂的使用體驗。",
+        "support": "如果您需要協助，我們的客服專家全天候為您服務。請通過電話或電子郵件與我們聯繫。"
+      }
     }
   },
   "localization": {

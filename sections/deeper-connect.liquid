@@ -56,129 +56,24 @@
 <section
     class="benefits-section section--{{ section.settings.width }} section--padding-{{ section.settings.padding_top }}-top section--padding-{{ section.settings.padding_bottom }}-bottom">
     <div class="benefits-container">
-        <!-- <header class="benefits-header">
-            <h2 class="benefits-title">Why Deeper Connect?</h2>
-        </header> -->
-        <!-- <div class="benefits-content">
-            <div class="benefits-grid">
-                <div class="benefits-row">
-                    <div class="benefits-column">
-                        <article class="cybersecurity-card">
-                            <h3 class="cybersecurity-title">
-                                Enterprise-Level Cybersecurity
-                            </h3>
-                            <p class="cybersecurity-description">
-                                Deeper Network provides robust safety with decentralized
-                                VPNs and blockchain-enhanced security, reducing breach
-                                risks. Features include exclusive access logs, blacklists,
-                                and BitTorrent blocking for comprehensive DPN protection.
-                            </p>
-                            <a href="/pages/customize-trial-package" class="shop-now-link">
-                                <span class="shop-now-text">Shop now ></span>
-                            </a>
-                        </article>
-                    </div>
-                    <div class="image-column">
-                        <img loading="lazy"
-                            src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Connect1.png?v=1721360550"
-                            class="feature-image" alt="Deeper Connect device illustration" />
-                    </div>
-                </div>
-            </div>
-            <div class="additional-features">
-                <div class="features-row">
-                    <div class="benefits-column">
-                        <div class="subscription-card">
-                            <p class="subscription-text">
-                                One-time purchase, <br />
-                                zero subscription fees!
-                            </p>
-                            <img loading="lazy"
-                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Connect2.png?v=1721360225"
-                                class="subscription-image" alt="Subscription savings illustration" />
-                        </div>
-                    </div>
-                    <div class="features-column">
-                        <div class="features-wrapper">
-                            <div class="features-grid">
-                                <div class="benefits-column">
-                                    <div class="media-savings-card">
-                                        <h3 class="media-savings-title">
-                                            Trim Premium Media Spend
-                                        </h3>
-                                        <p class="media-savings-description">
-                                            Save at least $150 and up to $1,200 per year.
-                                        </p>
-                                        <div class="media-icons-row">
-                                            <img loading="lazy"
-                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Icon1_c3070ab3-595b-4a64-bdc6-1bdc9904a63e.png?v=1721360224"
-                                                class="media-icon" alt="Media service icon 1" />
-                                            <img loading="lazy"
-                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Icon2_f0684f0a-d51d-42c1-befa-36dbaf2340aa.png?v=1721360224"
-                                                class="media-icon" alt="Media service icon 2" />
-                                            <img loading="lazy"
-                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Icon3_a06b76c4-4b4b-4cb4-bc2b-fceb21f85225.png?v=1721360224"
-                                                class="media-icon" alt="Media service icon 3" />
-                                        </div>
-                                        <div class="additional-icons-row">
-                                            <img loading="lazy"
-                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/icon4_d4e9e8bb-a207-4ddf-9ebd-b5281055aae2.png?v=1721360224"
-                                                class="additional-icon" alt="Additional media service icon 1" />
-                                            <img loading="lazy"
-                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/icon5_c18f6072-d5db-4885-b2da-901ededefa4d.png?v=1721360224"
-                                                class="additional-icon" alt="Additional media service icon 2" />
-                                            <img loading="lazy"
-                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/icon6_331a3117-3a60-41ce-beef-9b76cebd38e5.png?v=1721360224"
-                                                class="additional-icon" alt="Additional media service icon 3" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="features-column-right">
-                                    <div class="features-stack">
-                                        <div class="geo-unlocking-card">
-                                            <h3 class="geo-unlocking-title">Geo-unlocking</h3>
-                                            <p class="geo-unlocking-description">
-                                                Bypassing geo-restrictions worldwide access.
-                                            </p>
-                                        </div>
-                                        <div class="ad-filter-card">
-                                            <h3 class="ad-filter-title">Filter Ads</h3>
-                                            <p class="ad-filter-description">
-                                                Eliminates malicious and disruptive ads
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <div class="guarantee-section">
             <div class="guarantee-container">
                 <ul class="guarantee-features">
                     <li class="guarantee-feature guarantee-item">
-                        <span>Minimal Configuration</span>
+                        <span>{{ 'sections.deeper_connect.features.minimal_config' | t }}</span>
                     </li>
-                    <li class="guarantee-item"><span>Unlimited devices</span></li>
-                    <li class="guarantee-item"><span>24/7 support</span></li>
-                    <li class="guarantee-item"><span>Adaptation equipment</span></li>
+                    <li class="guarantee-item"><span>{{ 'sections.deeper_connect.features.unlimited_devices' | t }}</span></li>
+                    <li class="guarantee-item"><span>{{ 'sections.deeper_connect.features.support' | t }}</span></li>
+                    <li class="guarantee-item"><span>{{ 'sections.deeper_connect.features.equipment' | t }} </span></li>
                 </ul>
                 <div class="guarantee-description">
-                    Setup is simple and intuitive, requiring minimal configuration.
-                     After connecting the built in Wi-Fi adapter or a set of 
-                  included of ethernet cables, you are ready to go.
+                    {{ 'sections.deeper_connect.descriptions.setup' | t }}
                 </div>
                 <div class="guarantee-description" style="display: none">
-                    A single purchase protects multiple devices in your household
-                    without the need for multiple accounts, ensuring a hassle-free
-                    experience.
+                    {{  'sections.deeper_connect.descriptions.devices' | t }}
                 </div>
                 <div class="guarantee-description" style="display: none">
-                    If you need assistance, our customer support experts are available
-                    24/7. Please contact us via Call or Email.
+                    {{  'sections.deeper_connect.descriptions.support' | t }}
                 </div>
                 <div class="guarantee-description" style="display: none">
                     <div class="device-list">

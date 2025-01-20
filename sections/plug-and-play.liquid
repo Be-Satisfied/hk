@@ -46,18 +46,17 @@
 "presets": [
 {
 "name": "2024 Plug And Play",
-"category": "Text"
+"category": "Installation"
 }
 ]
 }
 {% endschema %}
 
 <div class="Plug_and_Play">
-  <h2>Plug-and-Play</h2>
-  <p class="Plug_and_Play_text">To access a more comprehensive installation tutorial, please visit</p>
-  <a href="https://deepernetwork.in/pages/install-deeper-network" class="deeper_buy_now" target="_blank"
-    >install.deepernetwork ></a
-  >
+  <h2>{{ 'sections.plug_and_play.title' | t }}</h2>
+  <p class="Plug_and_Play_text">{{  'sections.plug_and_play.description' | t  }}</p>
+  <a href="{{ 'sections.plug_and_play.install_link' | t }}" class="deeper_buy_now" target="_blank"
+    > {{ 'sections.plug_and_play.install_text' | t }} </a>
   <div class="Plug_and_Play_list">
     <div class="Plug_and_Play_item">
       <div class="Plug_and_Play_item_img">
@@ -68,11 +67,10 @@
         >
       </div>
       <div class="Plug_and_Play_item_content">
-        <div class="Plug_and_Play_item_title">Virtual Wire Mode</div>
+        <div class="Plug_and_Play_item_title">{{ 'sections.plug_and_play.virtual_wire_mode.title' | t }}</div>
 
         <div class="Plug_and_Play_item_text">
-          Suitable for homes with both a modem and router. Install Deeper Connect directly between them, maintaining
-          your existing Wi-Fi while enabling DPN services.
+          {{ 'sections.plug_and_play.virtual_wire_mode.description' | t }}
         </div>
         <a href="" class="mode_link"> learn more </a>
       </div>
@@ -86,11 +84,10 @@
         >
       </div>
       <div class="Plug_and_Play_item_content">
-        <div class="Plug_and_Play_item_title">Router Mode</div>
+        <div class="Plug_and_Play_item_title">{{ 'sections.plug_and_play.router_mode.title' | t}}</div>
 
         <div class="Plug_and_Play_item_text">
-          Ideal for homes with integrated modem/routers.Deeper Connect serves as a second router for DpNservices,
-          requiring connection to DeeperWiFi.
+          {{ 'sections.plug_and_play.router_mode.description' | t }}
         </div>
         <a href="" class="mode_link"> learn more </a>
       </div>
@@ -104,11 +101,10 @@
         >
       </div>
       <div class="Plug_and_Play_item_content">
-        <div class="Plug_and_Play_item_title">Wifi Adapter Mode</div>
+        <div class="Plug_and_Play_item_title">{{ 'sections.plug_and_play.wifi_adapter_mode.title' | t }}</div>
 
         <div class="Plug_and_Play_item_text">
-          Great for home Wi-Fi or public hotspots, such as hotels, cafes, and airports. Deeper Connect acts as a USB
-          Wi-Fi adapter, letting you connect to home Wi-Fi or the public Wi-Fi without DeeperWiFi.
+          {{ 'sections.plug_and_play.wifi_adapter_mode.description' | t }}
         </div>
         <a href="" class="mode_link"> learn more </a>
       </div>
@@ -122,11 +118,10 @@
         >
       </div>
       <div class="Plug_and_Play_item_content">
-        <div class="Plug_and_Play_item_title">Wireless Relay Mode</div>
+        <div class="Plug_and_Play_item_title">{{ 'sections.plug_and_play.wireless_relay_mode.title' | t }}</div>
 
         <div class="Plug_and_Play_item_text">
-          Perfect for home Wi-Fi or public hotspots like hotels, cafes, and airports. Deeper Connect connects to home
-          Wi-Fi or the public Wi-Fi, and users need to connect to DeeperWiFi to use DPN services.
+          {{ 'sections.plug_and_play.wireless_relay_mode.description' | t }}
         </div>
         <a href="" class="mode_link"> learn more </a>
       </div>
@@ -151,7 +146,7 @@
   }
 
   .Plug_and_Play {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 36px 0;
   }
@@ -166,7 +161,7 @@
     line-height: 48px;
     /* 120% */
     letter-spacing: -0.12px;
-    margin: 0 0 16px 0;
+    margin: 0 0 30px 0;
   }
 
   .Plug_and_Play_text {
@@ -191,8 +186,7 @@
   }
 
   .Plug_and_Play_item {
-    min-width: 325px;
-    max-width: 325px;
+    flex: 1;
     border-radius: 18px;
     overflow: hidden;
     border: 0.5px solid #dfe4ea;
@@ -261,6 +255,8 @@
       font-size: 32px;
     }
 
+  
+
     .Plug_and_Play_text {
       font-size: 16px;
       margin-bottom: 20px;
@@ -277,8 +273,8 @@
     .Plug_and_Play_list {
       margin-top: 20px;
       padding: 0 10px;
-      overflow-x: auto;
       padding-bottom: 20px;
+      flex-direction: column;
     }
   }
 </style>
