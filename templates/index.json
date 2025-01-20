@@ -83,11 +83,20 @@
         "padding_bottom": 0,
         "width": "wrapper--none"
       }
+    },
+    "deeper_connect_pYe7ei": {
+      "type": "deeper-connect",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width": "wrapper--none"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "plug_and_play_cfJWMU"
+    "plug_and_play_cfJWMU",
+    "deeper_connect_pYe7ei"
   ]
 }
