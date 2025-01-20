@@ -1,6 +1,829 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+"name": "Deeper Connect",
+"settings": [
+{
+"type": "range",
+"id": "padding_top",
+"min": 0,
+"max": 180,
+"step": 2,
+"unit": "px",
+"label": "Padding top",
+"default": 0
+}, {
+"type": "range",
+"id": "padding_bottom",
+"min": 0,
+"max": 180,
+"step": 2,
+"unit": "px",
+"label": "Padding bottom",
+"default": 0
+},
+{
+"type": "select",
+"id": "width",
+"label": "Section width",
+"default": "wrapper--none",
+"options": [
+{
+"value": "wrapper--none",
+"label": "Full width"
+}, {
+"value": "wrapper--full",
+"label": "Full width padded"
+}, {
+"value": "wrapper",
+"label": "Page width"
+}, {
+"value": "wrapper--narrow",
+"label": "Page width narrow"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Deeper Connect",
+"category": "Text"
+}
+]
+}
 {% endschema %}
+
+
+<section
+    class="benefits-section section--{{ section.settings.width }} section--padding-{{ section.settings.padding_top }}-top section--padding-{{ section.settings.padding_bottom }}-bottom">
+    <div class="benefits-container">
+        <!-- <header class="benefits-header">
+            <h2 class="benefits-title">Why Deeper Connect?</h2>
+        </header> -->
+        <!-- <div class="benefits-content">
+            <div class="benefits-grid">
+                <div class="benefits-row">
+                    <div class="benefits-column">
+                        <article class="cybersecurity-card">
+                            <h3 class="cybersecurity-title">
+                                Enterprise-Level Cybersecurity
+                            </h3>
+                            <p class="cybersecurity-description">
+                                Deeper Network provides robust safety with decentralized
+                                VPNs and blockchain-enhanced security, reducing breach
+                                risks. Features include exclusive access logs, blacklists,
+                                and BitTorrent blocking for comprehensive DPN protection.
+                            </p>
+                            <a href="/pages/customize-trial-package" class="shop-now-link">
+                                <span class="shop-now-text">Shop now ></span>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="image-column">
+                        <img loading="lazy"
+                            src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Connect1.png?v=1721360550"
+                            class="feature-image" alt="Deeper Connect device illustration" />
+                    </div>
+                </div>
+            </div>
+            <div class="additional-features">
+                <div class="features-row">
+                    <div class="benefits-column">
+                        <div class="subscription-card">
+                            <p class="subscription-text">
+                                One-time purchase, <br />
+                                zero subscription fees!
+                            </p>
+                            <img loading="lazy"
+                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Connect2.png?v=1721360225"
+                                class="subscription-image" alt="Subscription savings illustration" />
+                        </div>
+                    </div>
+                    <div class="features-column">
+                        <div class="features-wrapper">
+                            <div class="features-grid">
+                                <div class="benefits-column">
+                                    <div class="media-savings-card">
+                                        <h3 class="media-savings-title">
+                                            Trim Premium Media Spend
+                                        </h3>
+                                        <p class="media-savings-description">
+                                            Save at least $150 and up to $1,200 per year.
+                                        </p>
+                                        <div class="media-icons-row">
+                                            <img loading="lazy"
+                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Icon1_c3070ab3-595b-4a64-bdc6-1bdc9904a63e.png?v=1721360224"
+                                                class="media-icon" alt="Media service icon 1" />
+                                            <img loading="lazy"
+                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Icon2_f0684f0a-d51d-42c1-befa-36dbaf2340aa.png?v=1721360224"
+                                                class="media-icon" alt="Media service icon 2" />
+                                            <img loading="lazy"
+                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Icon3_a06b76c4-4b4b-4cb4-bc2b-fceb21f85225.png?v=1721360224"
+                                                class="media-icon" alt="Media service icon 3" />
+                                        </div>
+                                        <div class="additional-icons-row">
+                                            <img loading="lazy"
+                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/icon4_d4e9e8bb-a207-4ddf-9ebd-b5281055aae2.png?v=1721360224"
+                                                class="additional-icon" alt="Additional media service icon 1" />
+                                            <img loading="lazy"
+                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/icon5_c18f6072-d5db-4885-b2da-901ededefa4d.png?v=1721360224"
+                                                class="additional-icon" alt="Additional media service icon 2" />
+                                            <img loading="lazy"
+                                                src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/icon6_331a3117-3a60-41ce-beef-9b76cebd38e5.png?v=1721360224"
+                                                class="additional-icon" alt="Additional media service icon 3" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="features-column-right">
+                                    <div class="features-stack">
+                                        <div class="geo-unlocking-card">
+                                            <h3 class="geo-unlocking-title">Geo-unlocking</h3>
+                                            <p class="geo-unlocking-description">
+                                                Bypassing geo-restrictions worldwide access.
+                                            </p>
+                                        </div>
+                                        <div class="ad-filter-card">
+                                            <h3 class="ad-filter-title">Filter Ads</h3>
+                                            <p class="ad-filter-description">
+                                                Eliminates malicious and disruptive ads
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="guarantee-section">
+            <div class="guarantee-container">
+                <ul class="guarantee-features">
+                    <li class="guarantee-feature guarantee-item">
+                        <span>Minimal Configuration</span>
+                    </li>
+                    <li class="guarantee-item"><span>Unlimited devices</span></li>
+                    <li class="guarantee-item"><span>24/7 support</span></li>
+                    <li class="guarantee-item"><span>Adaptation equipment</span></li>
+                </ul>
+                <div class="guarantee-description">
+                    Setup is simple and intuitive, requiring minimal configuration.
+                     After connecting the built in Wi-Fi adapter or a set of 
+                  included of ethernet cables, you are ready to go.
+                </div>
+                <div class="guarantee-description" style="display: none">
+                    A single purchase protects multiple devices in your household
+                    without the need for multiple accounts, ensuring a hassle-free
+                    experience.
+                </div>
+                <div class="guarantee-description" style="display: none">
+                    If you need assistance, our customer support experts are available
+                    24/7. Please contact us via Call or Email.
+                </div>
+                <div class="guarantee-description" style="display: none">
+                    <div class="device-list">
+                        <div class="device-list-row">
+                            <div class="device-item">
+                                <!-- <div class="device-image"></div> -->
+                                <img class="device-image"
+                                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Windows-icon.png?v=1713934088"
+                                    loading="lazy" alt="Windows" />
+                                <div class="device-name">Windows</div>
+                            </div>
+                            <div class="device-item">
+                                <img class="device-image"
+                                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Macos-icon.png?v=1713934088"
+                                    loading="lazy" alt="macos" />
+                                <div class="device-name">macos</div>
+                            </div>
+                            <div class="device-item">
+                                <img class="device-image"
+                                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Linux-icon.png?v=1713934088"
+                                    loading="lazy" alt="Linux" />
+                                <div class="device-name">Linux</div>
+                            </div>
+                        </div>
+                        <div class="device-list-row">
+                            <div class="device-item">
+                                <img class="device-image"
+                                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Android-icon.png?v=1713934088"
+                                    loading="lazy" alt="Android" />
+                                <div class="device-name">Android</div>
+                            </div>
+                            <div class="device-item">
+                                <img class="device-image"
+                                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Ios-icon.png?v=1713934088"
+                                    loading="lazy" alt="ios" />
+                                <div class="device-name">ios</div>
+                            </div>
+                            <div class="device-item">
+                                <img class="device-image"
+                                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Chrome-icon.png?v=1713934088"
+                                    loading="lazy" alt="Chrome" />
+                                <div class="device-name">Chrome</div>
+                            </div>
+                        </div>
+                        <div class="device-list-row">
+                            <div class="device-item">
+                                <img class="device-image"
+                                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Edge-icon.png?v=1713934088"
+                                    loading="lazy" alt="Edge" />
+                                <div class="device-name">Edge</div>
+                            </div>
+                            <div class="device-item">
+                                <img class="device-image"
+                                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Android_TV-icon.png?v=1713934088"
+                                    loading="lazy" alt="Android TV" />
+                                <div class="device-name">Android TV</div>
+                            </div>
+                            <div class="device-item">
+                                <img class="device-image"
+                                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Others-icon.png?v=1713934088"
+                                    loading="lazy" alt="Android TV" />
+                                <div class="device-name">Others</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .benefits-section {
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        padding: 36px 0px;
+    }
+
+    .benefits-container {
+        display: flex;
+        width: 1200px;
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .benefits-header {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    .benefits-title {
+        color: #1d1d1f;
+        text-transform: capitalize;
+        align-self: center;
+        font: 700 48px/117% SF Pro Display, -apple-system, Roboto, Helvetica,
+            sans-serif;
+    }
+
+    .benefits-grid {
+        margin-top: 60px;
+    }
+
+    .benefits-row {
+        gap: 20px;
+        display: flex;
+    }
+
+    .benefits-column {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .cybersecurity-card {
+        border-radius: 18px;
+        box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.08);
+        background-color: #16191c;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        color: #fff;
+        font-weight: 400;
+        padding: 64px;
+    }
+
+    .cybersecurity-title {
+        font: 700 56px/72px SF Pro Display, -apple-system, Roboto, Helvetica,
+            sans-serif;
+        color: #FFF;
+    }
+
+    .cybersecurity-description {
+        margin-top: 24px;
+        font: 18px/24px SF Pro Display, sans-serif;
+        margin-bottom: 0;
+    }
+
+    .shop-now-link {
+        display: flex;
+        margin-top: 96px;
+        padding-right: 80px;
+        gap: 4px;
+        font-size: 16px;
+        color: #fff;
+        line-height: 137.5%;
+    }
+
+    .shop-now-text {
+        font-family: SF Pro Display, sans-serif;
+    }
+
+    .image-column {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+    }
+
+    .feature-image {
+        aspect-ratio: 1.12;
+        object-fit: auto;
+        object-position: center;
+        width: 100%;
+        align-self: stretch;
+        flex-grow: 1;
+    }
+
+    .additional-features {
+        margin-top: 20px;
+    }
+
+    .features-row {
+        gap: 20px;
+        display: flex;
+    }
+
+    .subscription-card {
+        border-radius: 18px;
+        background: linear-gradient(0deg,
+                #a9acf3 0.01%,
+                #8891dc 27.36%,
+                #4574e3 71.95%);
+        box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        font-size: 32px;
+        color: #fff;
+        font-weight: 700;
+        line-height: 38px;
+        padding: 48px 64px 0;
+        position: relative;
+    }
+
+    .subscription-text {
+        font-family: SF Pro Display, sans-serif;
+    }
+
+    .subscription-image {
+        aspect-ratio: 2.04;
+        object-fit: auto;
+        object-position: center;
+        width: 100%;
+        margin-top: 24px;
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+    }
+
+    .features-column {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+    }
+
+    .features-wrapper {
+        align-self: stretch;
+        flex-grow: 1;
+    }
+
+    .features-grid {
+        gap: 20px;
+        display: flex;
+    }
+
+    .media-savings-card {
+        align-self: stretch;
+        border-radius: 18px;
+        box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.08);
+        background-color: #fff;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 32px 30px;
+    }
+
+    .media-savings-title {
+        color: #1d1d1f;
+        font: 700 32px/38px SF Pro Display, -apple-system, Roboto, Helvetica,
+            sans-serif;
+    }
+
+    .media-savings-description {
+        color: #1d1d1f;
+        margin-top: 8px;
+        font: 400 18px/24px SF Pro Display, -apple-system, Roboto, Helvetica,
+            sans-serif;
+    }
+
+    .media-icons-row {
+        justify-content: space-between;
+        display: flex;
+        margin-top: 25px;
+        gap: 20px;
+    }
+
+    .media-icon {
+        aspect-ratio: 1;
+        object-fit: auto;
+        object-position: center;
+        width: 56px;
+    }
+
+    .additional-icons-row {
+        justify-content: space-between;
+        display: flex;
+        margin-top: 32px;
+        gap: 20px;
+    }
+
+    .additional-icon {
+        aspect-ratio: 1;
+        object-fit: auto;
+        object-position: center;
+        width: 56px;
+    }
+
+    .features-column-right {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+    }
+
+    .features-stack {
+        justify-content: flex-end;
+        align-self: stretch;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+    .geo-unlocking-card {
+        justify-content: center;
+        border-radius: 18px;
+        box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.08);
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        color: #1d1d1f;
+        padding: 30px;
+    }
+
+    .geo-unlocking-title {
+        font: 700 32px/119% SF Pro Display, -apple-system, Roboto, Helvetica,
+            sans-serif;
+    }
+
+    .geo-unlocking-description {
+        margin-top: 8px;
+        font: 400 18px/24px SF Pro Display, -apple-system, Roboto, Helvetica,
+            sans-serif;
+    }
+
+    .ad-filter-card {
+        justify-content: center;
+        border-radius: 18px;
+        box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.08);
+        background-color: #fff;
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        color: #141519;
+        padding: 30px;
+    }
+
+    .ad-filter-title {
+        font: 700 32px/119% SF Pro Display, -apple-system, Roboto, Helvetica,
+            sans-serif;
+    }
+
+    .ad-filter-description {
+        margin-top: 8px;
+        font: 400 18px/24px SF Pro Display, -apple-system, Roboto, Helvetica,
+            sans-serif;
+    }
+
+    .guarantee-section {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        /* margin-top: 64px; */
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0 60px;
+    }
+
+    .guarantee-container {
+        display: flex;
+        width: 794px;
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .guarantee-features {
+        align-items: center;
+        border-bottom: 1px solid #86868b;
+        align-self: center;
+        display: flex;
+        gap: 20px;
+        color: #86868b;
+        text-transform: capitalize;
+        line-height: 137.5%;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .guarantee-feature {
+        justify-content: center;
+        border-bottom: 1px solid #1d1d1f;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        color: #1d1d1f;
+    }
+
+    .guarantee-text {
+        font-family: SF Pro Display, sans-serif;
+    }
+
+    .guarantee-item {
+        font-family: SF Pro Display, sans-serif;
+        margin: 0;
+    }
+
+    .guarantee-item span {
+        padding: 10px 10px;
+        min-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+    }
+
+    .guarantee-description {
+        color: #1d1d1f;
+        text-align: center;
+        font-family: SF Pro Display, sans-serif;
+        line-height: 22px;
+        margin-top: 32px;
+    }
+
+    .device-list {
+        display: flex;
+        gap: 10px;
+    }
+
+    .device-list-row {
+        display: flex;
+        padding: 8px 0;
+        gap: 8px;
+        flex: 1 0 0;
+    }
+
+    .device-item {
+        display: flex;
+        padding: 8px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        flex: 1 0 0;
+    }
+
+    .device-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    @media (max-width: 991px) {
+        .benefits-section {
+            padding: 30px 20px;
+        }
+
+        .benefits-header {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .benefits-title {
+            max-width: 100%;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        .benefits-grid {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        .benefits-row {
+            align-items: stretch;
+            gap: 20px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+
+        .benefits-column {
+            width: 100%;
+            min-width: 100%;
+        }
+
+        .cybersecurity-card {
+            max-width: 100%;
+            padding: 32px;
+        }
+
+        .cybersecurity-title {
+            max-width: 100%;
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        .cybersecurity-description {
+            max-width: 100%;
+        }
+
+        .shop-now-link {
+            flex-wrap: wrap;
+            padding-right: 20px;
+            margin-top: 40px;
+        }
+
+        .image-column {
+            width: 100%;
+            min-width: 100%;
+        }
+
+        .feature-image {
+            max-width: 100%;
+        }
+
+        .additional-features {
+            max-width: 100%;
+        }
+
+        .features-row {
+            align-items: stretch;
+            gap: 20px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+
+        .subscription-card {
+            max-width: 100%;
+            padding: 27px 35px 0 35px;
+        }
+
+        .subscription-text {
+            max-width: 100%;
+            font-size: 22px;
+            line-height: 26px;
+            padding-bottom: 150px;
+        }
+
+        .subscription-image {
+            max-width: 100%;
+        }
+
+        .features-column {
+            width: 100%;
+        }
+
+        .features-wrapper {
+            max-width: 100%;
+        }
+
+        .features-grid {
+            align-items: stretch;
+            gap: 20px;
+        }
+
+        .media-savings-card {
+            padding: 20px;
+            margin: 0;
+        }
+
+        .media-savings-title {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .media-savings-description {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .features-column-right {
+            width: 100%;
+            min-width: 100%;
+        }
+
+        .features-stack {
+            /* margin-top: 20px; */
+        }
+
+        .geo-unlocking-card {
+            padding: 20px;
+        }
+
+        .ad-filter-card {
+            padding: 20px;
+        }
+
+        .guarantee-section {
+            max-width: 100%;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        .guarantee-features {
+            /* flex-wrap: wrap; */
+            width: 100%;
+            overflow: hidden;
+            overflow-x: auto;
+            gap: 0px;
+        }
+
+        .guarantee-item {
+            flex: 1;
+        }
+
+        .guarantee-item span {
+            min-width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 10px;
+        }
+
+        .guarantee-description {
+            max-width: 100%;
+        }
+
+        .geo-unlocking-title {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .device-list {
+            flex-direction: column;
+        }
+    }
+</style>
+
+
+
+{% comment %}
+<script src="{{ 'special-offers.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+<script defer="defer">
+    document.addEventListener("DOMContentLoaded", function () {
+        const guaranteeItems = document.querySelectorAll(".guarantee-item");
+        const guaranteeDescriptions = document.querySelectorAll(
+            ".guarantee-description"
+        );
+
+        function showDescription(index) {
+            guaranteeDescriptions.forEach((desc, i) => {
+                if (i === index) {
+                    desc.style.display = "block";
+                } else {
+                    desc.style.display = "none";
+                }
+            });
+        }
+
+        guaranteeItems.forEach((item, index) => {
+            item.addEventListener("click", function () {
+                guaranteeItems.forEach((i) => i.classList.remove("guarantee-feature"));
+
+                this.classList.add("guarantee-feature");
+
+                showDescription(index);
+            });
+        });
+
+        guaranteeItems[0].classList.add("guarantee-feature");
+        showDescription(0);
+    });
+</script>
