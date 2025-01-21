@@ -95,10 +95,12 @@
     },
     "video_E4NTNT": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "Why Choose Deeper Connect ?",
         "heading_size": "h2",
         "enable_video_looping": false,
+        "video": "shopify://files/videos/a932b411e9774b9785da118f860c6701.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
