@@ -108,6 +108,77 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collapsible_content_HPB97F": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_Rgh9hR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is DPN and how does it differ from Decentralized VPN?",
+            "icon": "none",
+            "row_content": "<p>DPN (Decentralized Private Network) represents a decentralized private network technology and is an abbreviation for DeePer Network. It differs from the traditional decentralized VPNs (Decentralized VPN). While there are many Decentralized VPN projects worldwide, DPN stands out with its unique features. It incorporates enterprise-level network security technology into the Decentralized VPN framework, providing security and privacy for both bandwidth users and providers. This approach ensures that the development of the Deeper Network does not pose significant security risks to bandwidth providers like the TOR Network and other Decentralized VPN projects have, and it avoids the potential for the Deeper Network to evolve in the direction of the dark web. The next question will detail how DPN applies world-leading enterprise-level network security technology to protect the safety of bandwidth providers.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YhpRYW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the DPN technology, based on shared bandwidth, pose cybersecurity risks to bandwidth providers?",
+            "icon": "check_mark",
+            "row_content": "<p>Decentralized VPN technology based on shared bandwidth aims to enhance privacy and freedom in network access through bandwidth sharing. However, it may also pose cybersecurity risks to bandwidth providers. For instance, bandwidth requesters might use the technology to download illegal content, launch cyber-attacks, or access harmful websites, and the legal consequences of these activities could mistakenly be attributed to innocent bandwidth providers.</p><p>From its inception, the Deeper Network has placed a high emphasis on cybersecurity, striving to address this challenge by incorporating enterprise-level network security technology. To protect the cybersecurity of bandwidth providers, we have implemented the following measures:</p><p>1, Blocking Bit Torrent application usage with shared traffic:<br/>Users can disable Bit Torrent traffic sharing, preventing bandwidth requesters from using others' bandwidth for Bit Torrent downloads.<br/></p><p></p><p>2, Blocking access to illegal websites using shared traffic:<br/>Bandwidth providers can set website filters to prevent others from accessing illegal websites using their IP.<br/></p><p></p><p>3, Preventing intrusion using shared traffic:<br/>Deeper Network employs intrusion detection technology to monitor and thwart hacker intrusions into the network.<br/>Traceable shared logs for transparency and accountability: Any network connection leaves a log on the bandwidth provider's device, stored in encrypted form. When others use the provider's IP for illegal operations, the provider can send the encrypted log to the Deeper Network for decryption to identify the actual malicious user. This not only protects the security of the bandwidth provider but also the privacy of the bandwidth requester.<br/></p><p></p><p>4, Preventing shared bandwidth from exceeding monthly quotas: By setting maximum shared bandwidth and monthly limits, providers can prevent their shared traffic from exceeding monthly quotas.<br/></p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_6iPT86": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the notable differences in user experience between DPN and VPN?",
+            "icon": "check_mark",
+            "row_content": "<p>1, Cost difference: DPN offers lifetime free usage after purchase, whereas VPN typically requires a monthly fee.</p><p>2, Ease of use: DPN deployed using Deeper Connect automatically unlocks regional restrictions for all devices, whereas VPN requires software client installation on each device. Many devices do not support VPN software installation, such as Apple TV. DPN's smart routing feature allows traffic from different applications to automatically switch between countries, eliminating the need for manual node switching required by VPNs.</p><p>3, Speed comparison: VPNs provide services through servers, while DPN utilizes the upstream bandwidth of user nodes. Theoretically, VPN speed might be higher than DPN. However, DPN features node aggregation technology, using up to 8 user nodes simultaneously, offering up to 8 times the speed increase. Additionally, DPN's smart routing mode can accelerate streaming media resource access through nearby CDN nodes, reducing the transit delay and buffering common in VPNs.</p><p>4, Differences in geo-location unlocking: As more companies start detecting VPN or proxy IP accesses to streaming media (like Netflix), VPN IPs are easily detected. In contrast, DPN uses home IPs of users, reducing the risk of being blocked.<br/></p><p>5, Security: DPN integrates enterprise-level network security technology, filtering almost all internet ads and trackers, including some that require paid filtering. DPN is also equipped with advanced intrusion detection technology to identify and block cyber-attacks. Without a central server, user access logs are encrypted and dispersed across global nodes, enhancing privacy protection. In contrast, VPNs store user access logs on central servers, and the service provider may access or even view user data, posing risks of log leakage and selling user data.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_AWHBBA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does DPN's ad-filtering experience differ from Pi-hole?",
+            "icon": "check_mark",
+            "row_content": "<p>DPN's ad-filtering experience differs notably from Pi-hole. Pi-hole mainly relies on DNS filtering, controlling access to specific domains, but this method is limited in filtering precision. It cannot filter specific pages or services and is less capable of handling complex, deep-level ads, sometimes leading to the false blocking of normal content. For example, DPN can filter web and mobile YouTube ads and Spotify's built-in ads, while Pi-hole struggles in these areas.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jQEtY8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does DPN's ad-filtering experience differ from browser ad-filtering plugins?",
+            "icon": "check_mark",
+            "row_content": "<p>DPN's ad-filtering experience differs from browser plugins in the following ways:</p><p>Resistance to countermeasures: Browser plugins are more susceptible to website countermeasures. For instance, sites like YouTube frequently update their recognition codes against browser filtering plugins to prevent ad filtering. DPN's ad filtering, based on underlying traffic filtering, can evade such countermeasures, providing a more stable ad-filtering effect.</p><p>Cross-platform capability: Browser plugins usually only run on PC browsers and cannot be used across platforms. In contrast, DPN's ad-filtering functionality can run on multiple platforms including iOS, Windows, Mac OS, Android, TV OS, Linux, etc. This allows DPN to effectively filter ads in popular applications like YouTube and Spotify.</p><p>Friendly Reminder: To use DPN's ad-filtering feature, it's necessary to install Deeper Network's SSL root certificate on the terminal device, enabling Deeper Connect to modify underlying traffic.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Rgh9hR",
+        "collapsible_row_YhpRYW",
+        "collapsible_row_6iPT86",
+        "collapsible_row_AWHBBA",
+        "collapsible_row_jQEtY8"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "<strong>Frequently Asked Questions</strong>",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -115,6 +186,7 @@
     "featured_collection",
     "plug_and_play_cfJWMU",
     "deeper_connect_pYe7ei",
-    "video_E4NTNT"
+    "video_E4NTNT",
+    "collapsible_content_HPB97F"
   ]
 }
