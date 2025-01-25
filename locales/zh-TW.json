@@ -384,7 +384,7 @@
     "plug_and_play": {
       "title": "即插即用",
       "description": "如需查看更詳細的安裝教程，請訪問",
-      "install_link": "/pages/install-deeper-network", 
+      "install_link": "/pages/install-deeper-network",
       "install_text": "install.deepernetwork >",
       "learn_more": "了解更多",
       "virtual_wire_mode": {
@@ -397,7 +397,7 @@
         "description": "適用於使用整合式數據機/路由器的家庭。Deeper Connect 作為第二個路由器提供 DPN 服務，需要連接到 DeeperWiFi。",
         "alt": "路由器模式"
       },
-      "wifi_adapter_mode":{
+      "wifi_adapter_mode": {
         "title": "Wi-Fi 適配器模式",
         "description": "適用於家庭 Wi-Fi 或公共熱點，如酒店、咖啡廳和機場。Deeper Connect 作為 USB Wi-Fi 適配器，讓您無需 DeeperWiFi 即可連接到家庭 Wi-Fi 或公共 Wi-Fi。",
         "alt": "Wi-Fi 適配器模式"
@@ -411,7 +411,7 @@
     "deeper_connect": {
       "features": {
         "minimal_config": "最簡配置",
-        "unlimited_devices": "無限設備", 
+        "unlimited_devices": "無限設備",
         "support": "24/7 支援",
         "equipment": "適配設備"
       },
@@ -572,6 +572,28 @@
       "send_on_label": "發送時間 (選填)",
       "expanded": "禮品卡收件人表單已展開",
       "collapsed": "禮品卡收件人表單已收合"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "merchant_instruction_errors": {
+        "empty_stable_id": "%{position} %{name} 商品指令包含空穩定 ID。",
+        "invalid_stable_id_target": "%{position} %{name} 商品指令引用穩定 ID %{stable_id}，但此穩定 ID 不在商品系列中。",
+        "duplicate_variant_id": "%{position} %{name} 商品指令包含重複的款式 ID %{variant_id}。",
+        "invalid_variant_id_target": "%{position} %{name} 商品指令引用款式 ID %{variant_id}，但此款式不在商品系列中。"
+      },
+      "payment_challenge_modal": {
+        "qr_code": {
+          "instructions": "使用您的{{paymentMethod}}代碼完成購買"
+        },
+        "external": {
+          "instructions": "在您的應用程式上確認付款以完成本次購買"
+        },
+        "close": "關閉挑戰"
+      },
+      "shop_pay_external": {
+        "title": "商店付款結帳"
+      }
     }
   }
 }
