@@ -105,6 +105,76 @@
         "padding_bottom": 36
       }
     },
+    "featured_product_kDWEFD": {
+      "type": "featured-product",
+      "blocks": {
+        "text_agpgJD": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_NDQdbX": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_iAQzBH": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_BJ8nqF": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_nFT4rY": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_wCfcLR": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_Mh3zpr": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_agpgJD",
+        "title_NDQdbX",
+        "price_iAQzBH",
+        "variant_picker_BJ8nqF",
+        "quantity_selector_nFT4rY",
+        "buy_buttons_wCfcLR",
+        "share_Mh3zpr"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "deeper-connect-air",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "plug_and_play_cfJWMU": {
       "type": "plug-and-play",
       "settings": {
@@ -213,6 +283,7 @@
     "image_banner",
     "featured_collection",
     "featured_collection_LKBDpx",
+    "featured_product_kDWEFD",
     "plug_and_play_cfJWMU",
     "deeper_connect_pYe7ei",
     "video_E4NTNT",
