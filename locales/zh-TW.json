@@ -382,6 +382,7 @@
       "step_error": "只能以 {{ step }} 為增量新增此品項"
     },
     "plug_and_play": {
+      "imageText":"購買 SE 或 MINI，即可獲贈高級筆記本！購買 Air 或 LITE，即可獲贈時尚收納包！",
       "title": "即插即用",
       "description": "如需查看更詳細的安裝教程，請訪問",
       "install_link": "/pages/install-deeper-network",
