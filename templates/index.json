@@ -15,8 +15,15 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "Limited promotion",
             "heading_size": "h0"
+          }
+        },
+        "text_6yi3Ki": {
+          "type": "text",
+          "settings": {
+            "text": "Buy a SE or MINI and get a free premium notebook!Buy an Air or LITE and receive a free stylish pouch!",
+            "text_style": "body"
           }
         },
         "button": {
@@ -33,15 +40,16 @@
       },
       "block_order": [
         "heading",
+        "text_6yi3Ki",
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/banner1.png",
+        "image": "shopify://shop_images/20250617141613_47dd3e4d-bcb5-45ba-8e29-6e9cacf5b4e9.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
