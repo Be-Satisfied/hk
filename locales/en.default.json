@@ -384,7 +384,8 @@
     },
     "plug_and_play": {
       "title": "Plug-and-Play",
-      "imageText":"Buy a SE or MINI and get a free premium notebook! <br>  Buy an Air or LITE and receive a free stylish pouch!",
+      "imageText1":"Buy a SE or MINI and get a free premium notebook!",
+      "imageText2":"Buy an Air or LITE and receive a free stylish pouch!",
       "description": "To access a more comprehensive installation tutorial, please visit",
       "install_link": "/pages/install-deeper-network",
       "install_text": "install.deepernetwork >",
