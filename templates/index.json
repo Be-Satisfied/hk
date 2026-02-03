@@ -87,6 +87,7 @@
     },
     "featured_collection_LKBDpx": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Bundle deals",
         "heading_size": "h1",
